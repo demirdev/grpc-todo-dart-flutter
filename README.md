@@ -9,6 +9,19 @@
 * write mobile client app in flutter
 * 
 
+```bash
+# run server
+dart bin/server.dart
+```
+```dart
+# run client
+dart bin/client.dart
+````
+
+
+
+# Notes for me
+
 - brew install protobuf
 - dart pub global activate protoc_plugin
 - export PATH="$PATH:$HOME/.pub-cache/bin"\
@@ -24,10 +37,4 @@
 protoc --dart_out=grpc:lib/src/generated -Iprotos protos/todo.proto
 ```
 
-```bash
-# run server
-dart bin/server.dart
 
-# run client
-dart bin/client.dart
-````
