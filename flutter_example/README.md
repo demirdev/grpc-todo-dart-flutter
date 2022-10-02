@@ -2,6 +2,8 @@
 
 grpc-todo-dart-flutter mobile client app.
 
+<img width="200" src="https://raw.githubusercontent.com/demirdev/grpc-todo-dart-flutter/master/flutter_example/doc/assets/demo.gif" alt="Example Project" />
+
 ## 1. server ip and start server
 ```bash
 # change server ip to yours in grpc-todo-dart-flutter/bin/shared_constants.dart
@@ -23,5 +25,3 @@ dart bin/server.dart
 ```bash
 flutter run
 ```
-
-<img width="200" src="https://raw.githubusercontent.com/demirdev/grpc-todo-dart-flutter/master/flutter_example/doc/assets/demo.gif" alt="Example Project" />

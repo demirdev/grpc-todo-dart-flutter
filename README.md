@@ -1,9 +1,12 @@
-## gRPC example with dart
+## gRPC example with dart and flutter
+
+<img width="200" src="https://raw.githubusercontent.com/demirdev/grpc-todo-dart-flutter/master/flutter_example/doc/assets/demo.gif" alt="Example Project" />
+
 ### features
 * listen todo stream
 * add todo item
 * remove todo item
-* [TODO] write mobile client app in flutter
+* write mobile client app in flutter
 * 
 
 - brew install protobuf
