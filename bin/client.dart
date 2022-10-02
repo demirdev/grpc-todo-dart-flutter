@@ -4,7 +4,7 @@ import 'package:grpc_todo/src/generated/todo.pbgrpc.dart';
 import 'shared_constants.dart';
 
 Future<void> main(List<String> args) async {
-  final channel = ClientChannel('localhost',
+  final channel = ClientChannel(serverAddress,
       port: serverPort,
       options:
           const ChannelOptions(credentials: ChannelCredentials.insecure()));

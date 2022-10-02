@@ -25,6 +25,7 @@ class TodoService extends TodoServiceBase {
     return _todos[uid]!;
   }
 
+  /// represent userid
   String uid = '001';
 
   @override
@@ -55,6 +56,10 @@ class TodoService extends TodoServiceBase {
   @override
   Stream<TodoStreamItems> listenTodosStream(
       ServiceCall call, ListenTodosRequest request) async* {
+    /// first, send all todos.
+    yield TodoStreamItems(items: getUserTodos(uid));
+
+    /// wait for changes, then send all todos to user.
     await for (final todoStreamItem in getUserStreamController(uid).stream) {
       yield todoStreamItem;
     }

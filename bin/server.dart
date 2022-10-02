@@ -10,6 +10,6 @@ Future<void> main(List<String> args) async {
     CodecRegistry(codecs: const [GzipCodec(), IdentityCodec()]),
   );
 
-  await server.serve(port: serverPort);
-  print('server running on localhost:$serverPort');
+  await server.serve(address: serverAddress, port: serverPort);
+  print('server running on $serverAddress:$serverPort');
 }
