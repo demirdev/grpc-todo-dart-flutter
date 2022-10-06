@@ -1,6 +1,6 @@
 ## gRPC example with dart and flutter
 
-<img width="200" src="https://raw.githubusercontent.com/demirdev/grpc-todo-dart-flutter/multiplayer/flutter_example/doc/assets/demo.gif" alt="Example Project" />
+<img width="200" src="https://raw.githubusercontent.com/demirdev/grpc-todo-dart-flutter/realtime/flutter_example/doc/assets/demo.gif" alt="Example Project" />
 
 ### features
 * listen realtime stream

@@ -2,7 +2,7 @@
 
 grpc-realtime-dart-flutter mobile client app.
 
-<img width="200" src="https://raw.githubusercontent.com/demirdev/grpc-todo-dart-flutter/multiplayer/flutter_example/doc/assets/demo.gif" alt="Example Project" />
+<img width="200" src="https://raw.githubusercontent.com/demirdev/grpc-todo-dart-flutter/realtime/flutter_example/doc/assets/demo.gif" alt="Example Project" />
 
 ## 1. server ip and start server
 ```bash
