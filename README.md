@@ -1,12 +1,11 @@
 ## gRPC example with dart and flutter
 
-<img width="200" src="https://raw.githubusercontent.com/demirdev/grpc-todo-dart-flutter/master/flutter_example/doc/assets/demo.gif" alt="Example Project" />
+<img width="200" src="https://raw.githubusercontent.com/demirdev/grpc-todo-dart-flutter/multiplayer/flutter_example/doc/assets/demo.gif" alt="Example Project" />
 
 ### features
-* listen todo stream
-* add todo item
-* remove todo item
-* write mobile client app in flutter
+* listen realtime stream
+* change player position
+* mobile client app in flutter
 * 
 
 - brew install protobuf
@@ -30,4 +29,9 @@ dart bin/server.dart
 
 # run client
 dart bin/client.dart
+
+# run client 2
+dart bin/client2.dart
+
+# run flutter app to join room
 ````

@@ -1,8 +1,8 @@
 # flutter_example
 
-grpc-todo-dart-flutter mobile client app.
+grpc-realtime-dart-flutter mobile client app.
 
-<img width="200" src="https://raw.githubusercontent.com/demirdev/grpc-todo-dart-flutter/master/flutter_example/doc/assets/demo.gif" alt="Example Project" />
+<img width="200" src="https://raw.githubusercontent.com/demirdev/grpc-todo-dart-flutter/multiplayer/flutter_example/doc/assets/demo.gif" alt="Example Project" />
 
 ## 1. server ip and start server
 ```bash
@@ -12,6 +12,10 @@ const serverAddress = '192.168.1.67';
 
 # run the server app in terminal
 dart bin/server.dart
+
+# run a few dummy clients in terminal
+dart bin/client.dart
+dart bin/client2.dart
 ```
 
 ## 2. server ip in flutter app.

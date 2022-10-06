@@ -12,34 +12,34 @@ import 'dart:typed_data' as $typed_data;
 const UpdatePosition$json = const {
   '1': 'UpdatePosition',
   '2': const [
-    const {'1': 'request', '3': 1, '4': 1, '5': 11, '6': '.grpc_todo.RoomRequest', '10': 'request'},
+    const {'1': 'request', '3': 1, '4': 1, '5': 11, '6': '.grpc_realtime.RoomRequest', '10': 'request'},
   ],
 };
 
 /// Descriptor for `UpdatePosition`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List updatePositionDescriptor = $convert.base64Decode('Cg5VcGRhdGVQb3NpdGlvbhIwCgdyZXF1ZXN0GAEgASgLMhYuZ3JwY190b2RvLlJvb21SZXF1ZXN0UgdyZXF1ZXN0');
+final $typed_data.Uint8List updatePositionDescriptor = $convert.base64Decode('Cg5VcGRhdGVQb3NpdGlvbhI0CgdyZXF1ZXN0GAEgASgLMhouZ3JwY19yZWFsdGltZS5Sb29tUmVxdWVzdFIHcmVxdWVzdA==');
 @$core.Deprecated('Use roomRequestDescriptor instead')
 const RoomRequest$json = const {
   '1': 'RoomRequest',
   '2': const [
     const {'1': 'roomName', '3': 1, '4': 1, '5': 9, '10': 'roomName'},
-    const {'1': 'player', '3': 2, '4': 1, '5': 11, '6': '.grpc_todo.Player', '10': 'player'},
+    const {'1': 'player', '3': 2, '4': 1, '5': 11, '6': '.grpc_realtime.Player', '10': 'player'},
   ],
 };
 
 /// Descriptor for `RoomRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List roomRequestDescriptor = $convert.base64Decode('CgtSb29tUmVxdWVzdBIaCghyb29tTmFtZRgBIAEoCVIIcm9vbU5hbWUSKQoGcGxheWVyGAIgASgLMhEuZ3JwY190b2RvLlBsYXllclIGcGxheWVy');
+final $typed_data.Uint8List roomRequestDescriptor = $convert.base64Decode('CgtSb29tUmVxdWVzdBIaCghyb29tTmFtZRgBIAEoCVIIcm9vbU5hbWUSLQoGcGxheWVyGAIgASgLMhUuZ3JwY19yZWFsdGltZS5QbGF5ZXJSBnBsYXllcg==');
 @$core.Deprecated('Use playerDescriptor instead')
 const Player$json = const {
   '1': 'Player',
   '2': const [
     const {'1': 'userName', '3': 1, '4': 1, '5': 9, '10': 'userName'},
-    const {'1': 'position', '3': 2, '4': 1, '5': 11, '6': '.grpc_todo.Position', '10': 'position'},
+    const {'1': 'position', '3': 2, '4': 1, '5': 11, '6': '.grpc_realtime.Position', '10': 'position'},
   ],
 };
 
 /// Descriptor for `Player`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List playerDescriptor = $convert.base64Decode('CgZQbGF5ZXISGgoIdXNlck5hbWUYASABKAlSCHVzZXJOYW1lEi8KCHBvc2l0aW9uGAIgASgLMhMuZ3JwY190b2RvLlBvc2l0aW9uUghwb3NpdGlvbg==');
+final $typed_data.Uint8List playerDescriptor = $convert.base64Decode('CgZQbGF5ZXISGgoIdXNlck5hbWUYASABKAlSCHVzZXJOYW1lEjMKCHBvc2l0aW9uGAIgASgLMhcuZ3JwY19yZWFsdGltZS5Qb3NpdGlvblIIcG9zaXRpb24=');
 @$core.Deprecated('Use positionDescriptor instead')
 const Position$json = const {
   '1': 'Position',
@@ -55,9 +55,9 @@ final $typed_data.Uint8List positionDescriptor = $convert.base64Decode('CghQb3Np
 const RoomStream$json = const {
   '1': 'RoomStream',
   '2': const [
-    const {'1': 'players', '3': 1, '4': 3, '5': 11, '6': '.grpc_todo.Player', '10': 'players'},
+    const {'1': 'players', '3': 1, '4': 3, '5': 11, '6': '.grpc_realtime.Player', '10': 'players'},
   ],
 };
 
 /// Descriptor for `RoomStream`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List roomStreamDescriptor = $convert.base64Decode('CgpSb29tU3RyZWFtEisKB3BsYXllcnMYASADKAsyES5ncnBjX3RvZG8uUGxheWVyUgdwbGF5ZXJz');
+final $typed_data.Uint8List roomStreamDescriptor = $convert.base64Decode('CgpSb29tU3RyZWFtEi8KB3BsYXllcnMYASADKAsyFS5ncnBjX3JlYWx0aW1lLlBsYXllclIHcGxheWVycw==');

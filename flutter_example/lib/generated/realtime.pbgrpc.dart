@@ -15,12 +15,12 @@ export 'realtime.pb.dart';
 
 class RealtimeClient extends $grpc.Client {
   static final _$join = $grpc.ClientMethod<$0.RoomRequest, $0.RoomStream>(
-      '/grpc_todo.Realtime/join',
+      '/grpc_realtime.Realtime/join',
       ($0.RoomRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $0.RoomStream.fromBuffer(value));
   static final _$updatePosition =
       $grpc.ClientMethod<$0.UpdatePosition, $0.UpdatePosition>(
-          '/grpc_todo.Realtime/updatePosition',
+          '/grpc_realtime.Realtime/updatePosition',
           ($0.UpdatePosition value) => value.writeToBuffer(),
           ($core.List<$core.int> value) => $0.UpdatePosition.fromBuffer(value));
 
@@ -43,7 +43,7 @@ class RealtimeClient extends $grpc.Client {
 }
 
 abstract class RealtimeServiceBase extends $grpc.Service {
-  $core.String get $name => 'grpc_todo.Realtime';
+  $core.String get $name => 'grpc_realtime.Realtime';
 
   RealtimeServiceBase() {
     $addMethod($grpc.ServiceMethod<$0.RoomRequest, $0.RoomStream>(
