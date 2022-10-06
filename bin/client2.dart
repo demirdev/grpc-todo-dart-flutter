@@ -14,19 +14,19 @@ Future<void> main(List<String> args) async {
   final stub = RealtimeClient(channel);
 
   final initialPosition = RoomRequest(
-      player: Player(userName: 'A', position: Position(x: 0.5, y: 0.3)),
+      player: Player(userName: 'B', position: Position(x: 0.8, y: 0.8)),
       roomName: 'FirstRoom');
 
   try {
-    listenPlayersStream(stub, initialPosition);
-    while (true) {
-      await _updateRandomPosition(stub, initialPosition);
-    }
+    await listenPlayersStream(stub, initialPosition);
+    // while (true) {
+    //   await _updateRandomPosition(stub, initialPosition);
+    // }
   } catch (e) {
     print(e);
   }
   await channel.shutdown();
-  print('client shutdowned');
+  print('client shutdowned for ${initialPosition.player.userName}');
 }
 
 Future<void> _updateRandomPosition(
@@ -39,7 +39,7 @@ Future<void> _updateRandomPosition(
   });
 }
 
-void listenPlayersStream(
+Future<void> listenPlayersStream(
     RealtimeClient stub, RoomRequest initialPosition) async {
   await for (final roomStream in stub.join(initialPosition)) {
     print('Received from stream: ${roomStream.toString()}');

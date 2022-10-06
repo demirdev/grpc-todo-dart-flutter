@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package grpc_realtime;
+
+service Realtime {
+  rpc join(RoomRequest) returns (stream RoomStream){}
+  rpc updatePosition(UpdatePosition) returns (UpdatePosition){}
+
+}
+
+message UpdatePosition {
+  RoomRequest request = 1;
+}
+
+message RoomRequest {
+  string roomName = 1;
+  Player player = 2;
+}
+
+message Player {
+  string userName = 1;
+  Position position = 2;
+}
+
+message Position {
+  double x = 1;
+  double y = 2;
+}
+
+message RoomStream {
+  repeated Player players = 1;
+}
+

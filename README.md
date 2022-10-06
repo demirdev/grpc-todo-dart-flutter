@@ -21,7 +21,7 @@
 ## Generate gRPC Code
 
 ```
-protoc --dart_out=grpc:lib/src/generated -Iprotos protos/todo.proto
+protoc --dart_out=grpc:lib/src/generated -Iprotos protos/realtime.proto
 ```
 
 ```bash

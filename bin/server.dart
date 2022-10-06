@@ -1,11 +1,11 @@
 import 'package:grpc/grpc.dart';
 
-import 'grpc_todo.dart';
+import 'grpc_realtime.dart';
 import 'shared_constants.dart';
 
 Future<void> main(List<String> args) async {
   final server = Server(
-    [TodoService()],
+    [RealTimeService()],
     const <Interceptor>[],
     CodecRegistry(codecs: const [GzipCodec(), IdentityCodec()]),
   );
