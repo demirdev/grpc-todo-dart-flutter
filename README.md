@@ -1,4 +1,4 @@
-## gRPC example with dart and flutter
+## Realtime Example (Dart, gRPC, Flutter)
 
 <img width="200" src="https://raw.githubusercontent.com/demirdev/grpc-todo-dart-flutter/realtime/flutter_example/doc/assets/demo.gif" alt="Example Project" />
 
